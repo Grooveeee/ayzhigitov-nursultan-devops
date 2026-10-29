@@ -1,4 +1,4 @@
-# Aizhigitov Nursultan Student API
+# Aizhigitov Nursultan Student API - Documentation Edition
 
 ## Author
 Aizhigitov Nursultan
