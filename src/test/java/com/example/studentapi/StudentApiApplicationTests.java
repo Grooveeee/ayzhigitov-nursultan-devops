@@ -8,6 +8,6 @@ class StudentApiApplicationTests {
     void testStudentEntity() {
         Student student = new Student();
         student.setName("Aizhigitov Nursultan");
-        assertEquals("BROKEN_TEST_VALUE", student.getName());
+        assertEquals("Aizhigitov Nursultan", student.getName());
     }
 }
