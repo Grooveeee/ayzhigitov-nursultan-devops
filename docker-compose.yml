@@ -1,0 +1,45 @@
+name: aizhigitov-nursultan-student-api
+
+services:
+  postgres-db:
+    image: postgres:16-alpine
+    container_name: aizhigitov-nursultan-postgres
+    environment:
+      POSTGRES_DB: studentdb
+      POSTGRES_USER: nursultan
+      POSTGRES_PASSWORD: secretpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata_aizhigitov_nursultan:/var/lib/postgresql/data
+    networks:
+      - student-api-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nursultan -d studentdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  student-api:
+    build: .
+    image: aizhigitov-nursultan-student-api:v1.0-aizhigitov-nursultan
+    container_name: aizhigitov-nursultan-app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-db:5432/studentdb
+      SPRING_DATASOURCE_USERNAME: nursultan
+      SPRING_DATASOURCE_PASSWORD: secretpassword
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    depends_on:
+      postgres-db:
+        condition: service_healthy
+    networks:
+      - student-api-net
+
+volumes:
+  pgdata_aizhigitov_nursultan:
+
+networks:
+  student-api-net:
+    driver: bridge
