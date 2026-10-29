@@ -1,0 +1,37 @@
+==========================================
+Student Full Name: Aizhigitov Nursultan
+Current Date and Time: Fri Oct 30 00:15:14 +05 2026
+Current Username: nurik
+------------------------------------------
+OS and Kernel Version:
+Linux ubuntu 7.2.9-orbstack-00391-g2b298d05fbd4 #1 SMP PREEMPT Mon Oct 12 05:39:36 UTC 2026 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 26.04.1 LTS"
+VERSION="26.04.1 LTS (Resolute Raccoon)"
+------------------------------------------
+CPU Information:
+Architecture:                            aarch64
+CPU(s):                                  10
+Model name:                              -
+------------------------------------------
+Memory Information:
+               total        used        free      shared  buff/cache   available
+Mem:           7.8Gi       513Mi       7.4Gi        22Mi        91Mi       7.3Gi
+Swap:          8.8Gi          0B       8.8Gi
+------------------------------------------
+Project Disk Usage:
+12K	.
+------------------------------------------
+Available Disk Space:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vdb1       783G  3.1G  780G   1% /
+none            492K  4.0K  488K   1% /dev
+orbstack        4.0G  536K  4.0G   1% /opt/orbstack-guest
+tmpfs           6.3G     0  6.3G   0% /tmp
+/dev/vdb1       783G  3.1G  780G   1% /opt/orbstack-guest/data
+orbstack        4.0G  8.0K  4.0G   1% /opt/orbstack-guest/run
+mac             927G  106G  822G  12% /mnt/mac
+machines        4.0G  4.0K  4.0G   1% /mnt/machines
+tmpfs           4.0G     0  4.0G   0% /dev/shm
+tmpfs           1.6G  440K  1.6G   1% /run
+tmpfs           801M  4.0K  801M   1% /run/user/502
+==========================================
