@@ -1,4 +1,4 @@
-# Aizhigitov Nursultan Student API - Main Production Branch
+# Aizhigitov Nursultan Student API (Main & Documentation)
 
 ## Author
 Aizhigitov Nursultan
